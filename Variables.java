@@ -1,7 +1,6 @@
 // Two types of variables: instance variables and static variables
 // variables use camelCase
 // constants use uppercase
-
 class Student {
     String studentName; // instance variable, belongs to object
     static int studentCount = 0; // static variable, belongs to class
