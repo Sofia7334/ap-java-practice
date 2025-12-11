@@ -1,10 +1,9 @@
-import java.net.SocketImplFactory;
 import java.util.Scanner;
 
 public class UserInput {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);    
-        /* System.out.println("Enter your name");
+        System.out.println("Enter your name");
         String name = input.nextLine();
         System.out.println(name);
 
@@ -15,10 +14,10 @@ public class UserInput {
 
         System.out.println("What is your height in meters?");
         double height = Double.parseDouble(input.nextLine());
-        System.out.println("You are " + height + " meters tall."); */
+        System.out.println("You are " + height + " meters tall.");
 
         // Challenge 1: email address generator
-        /* System.out.println("Enter a word: ");
+        System.out.println("Enter a word: ");
         String word1 = input.nextLine();
         System.out.println("Enter another word: ");
         String word2 = input.nextLine();
@@ -29,15 +28,15 @@ public class UserInput {
         System.out.println(number1 + number2);
         String numString = String.valueOf(number1 + number2);
         numString = numString.substring(0, 2);
-        System.out.println("Generated Email address: " + word1 + word2 + numString + "@gmail.com"); */
+        System.out.println("Generated Email address: " + word1 + word2 + numString + "@gmail.com");
 
         // Challenge 2: double conversion
-        /* System.out.println("Enter a number: ");
+        System.out.println("Enter a number: ");
         double double1 = Double.parseDouble(input.nextLine());
         System.out.println("Enter another number: ");
         double double2 = Double.parseDouble(input.nextLine());
         double quotient = (double1 / double2);
-        System.out.println("Quotient: " + quotient); */
+        System.out.println("Quotient: " + quotient);
 
         // Challenge 3: circle area
         System.out.println("Enter the diameter of a circle: ");
@@ -46,5 +45,6 @@ public class UserInput {
         double area = (Math.PI * radius * radius);
         System.out.println("The area of the circle is " + area);
 
+        input.close();
     }
 }
