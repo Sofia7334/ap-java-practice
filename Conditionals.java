@@ -69,7 +69,7 @@ public class Conditionals {
         }
         // Challenge 2:
         System.out.println("Enter the password: ");
-        String entry = input.nextLine();
+        entry = input.nextLine();
 
         input.close();
         }}
