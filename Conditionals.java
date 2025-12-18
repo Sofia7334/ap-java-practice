@@ -63,13 +63,31 @@ public class Conditionals {
         String entry = input.nextLine();
 
         if (entry.equals(password)){ // Compare them and print "Access granted" or "Access denied"
-            System.out.println("Access granted");
+            System.out.println("Access granted!\n");
         } else {
-            System.out.println("Access denied");
+            System.out.println("Access denied.\n");
         }
         // Challenge 2:
-        System.out.println("Enter the password: ");
-        entry = input.nextLine();
+        System.out.println("Enter a number: ");  // Ask the user for a number
+        int number = Integer.parseInt(input.nextLine());
+        if (number % 2 == 0){
+            System.out.println("This number is even.\n");
+        } else {
+            System.out.println("This number is odd.\n");
+        }
+        // Challenge 3:
+        System.out.println("Enter an integer grade: "); // Ask the user for an integer grade (0-100)
+        int grade = Integer.parseInt(input.nextLine()); // Remember to parse the string to integer
+        if (grade >= 90){ // Print a letter grade: A, B, C, D, F
+            System.out.println("A");
+        } else if (grade < 90 && grade >= 80){
+            System.out.println("B");
+        } else if (grade < 80 && grade >= 70){
+            System.out.println("C");
+        } else if (grade < 70 && grade >= 64){
+            System.out.println("D");
+        } else
+            System.out.println("F");
 
         input.close();
         }}
