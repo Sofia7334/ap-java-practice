@@ -24,9 +24,6 @@ public class BYTESPractice2 {
     } else {
         double midnum1 = array[(int) (midpoint -1)];
         double midnum2 = array[(int) midpoint];
-        System.out.println(midpoint);
-        System.out.println(midnum1);
-        System.out.println(midnum2);
         median = (midnum1 + midnum2)/2;}
     System.out.println("Array: " + Arrays.toString(array) + "\t Median: " + median);
 }}
