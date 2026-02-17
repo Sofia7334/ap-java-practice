@@ -21,7 +21,7 @@ public class Strings{
 
         System.out.println("Index select: " + name2.indexOf("o")); // Experiment with this
         System.out.println("Character select: " + name2.charAt(2));
-
+                    //  01234567890123
         String quote = "Talk is cheap, show me the code.";
         String result1 = quote.substring(15);
         String result2 = quote.substring(5, 13);
